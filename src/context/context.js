@@ -16,4 +16,4 @@ const GithubProvider = ({ children }) => {
   );
 };
 
-export {GithubProvider, GithubContext};
+export { GithubProvider, GithubContext };
