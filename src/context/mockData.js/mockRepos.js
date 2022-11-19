@@ -1,4 +1,4 @@
-export default [
+const userRepos = [
   {
     id: 239164394,
     node_id: "MDEwOlJlcG9zaXRvcnkyMzkxNjQzOTQ=",
@@ -429,8 +429,7 @@ export default [
     html_url: "https://github.com/john-smilga/bootstrap-furniture-e-commrece",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/bootstrap-furniture-e-commrece",
+    url: "https://api.github.com/repos/john-smilga/bootstrap-furniture-e-commrece",
     forks_url:
       "https://api.github.com/repos/john-smilga/bootstrap-furniture-e-commrece/forks",
     keys_url:
@@ -565,8 +564,7 @@ export default [
     html_url: "https://github.com/john-smilga/bootstrap-only-bootstrap-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/bootstrap-only-bootstrap-project",
+    url: "https://api.github.com/repos/john-smilga/bootstrap-only-bootstrap-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/bootstrap-only-bootstrap-project/forks",
     keys_url:
@@ -703,8 +701,7 @@ export default [
       "https://github.com/john-smilga/bootstrap-renters-real-estate-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/bootstrap-renters-real-estate-project",
+    url: "https://api.github.com/repos/john-smilga/bootstrap-renters-real-estate-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/bootstrap-renters-real-estate-project/forks",
     keys_url:
@@ -960,8 +957,7 @@ export default [
       "https://github.com/john-smilga/css-grid-udemy-restaurant-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/css-grid-udemy-restaurant-project",
+    url: "https://api.github.com/repos/john-smilga/css-grid-udemy-restaurant-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/css-grid-udemy-restaurant-project/forks",
     keys_url:
@@ -1365,8 +1361,7 @@ export default [
     html_url: "https://github.com/john-smilga/express-simple-portfolio-server",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/express-simple-portfolio-server",
+    url: "https://api.github.com/repos/john-smilga/express-simple-portfolio-server",
     forks_url:
       "https://api.github.com/repos/john-smilga/express-simple-portfolio-server/forks",
     keys_url:
@@ -1635,8 +1630,7 @@ export default [
     html_url: "https://github.com/john-smilga/firebase-restaurant-application",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/firebase-restaurant-application",
+    url: "https://api.github.com/repos/john-smilga/firebase-restaurant-application",
     forks_url:
       "https://api.github.com/repos/john-smilga/firebase-restaurant-application/forks",
     keys_url:
@@ -2040,8 +2034,7 @@ export default [
       "https://github.com/john-smilga/gatsby-backroads-project-recording",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/gatsby-backroads-project-recording",
+    url: "https://api.github.com/repos/john-smilga/gatsby-backroads-project-recording",
     forks_url:
       "https://api.github.com/repos/john-smilga/gatsby-backroads-project-recording/forks",
     keys_url:
@@ -2736,8 +2729,7 @@ export default [
       "https://github.com/john-smilga/gatsby-mdx-blog-udemy-course-second-project-starter-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/gatsby-mdx-blog-udemy-course-second-project-starter-project",
+    url: "https://api.github.com/repos/john-smilga/gatsby-mdx-blog-udemy-course-second-project-starter-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/gatsby-mdx-blog-udemy-course-second-project-starter-project/forks",
     keys_url:
@@ -3022,8 +3014,7 @@ export default [
       "https://github.com/john-smilga/gatsby-personal-site-2019-starter",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/gatsby-personal-site-2019-starter",
+    url: "https://api.github.com/repos/john-smilga/gatsby-personal-site-2019-starter",
     forks_url:
       "https://api.github.com/repos/john-smilga/gatsby-personal-site-2019-starter/forks",
     keys_url:
@@ -3445,8 +3436,7 @@ export default [
     html_url: "https://github.com/john-smilga/gatsby-second-tutorial-recording",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/gatsby-second-tutorial-recording",
+    url: "https://api.github.com/repos/john-smilga/gatsby-second-tutorial-recording",
     forks_url:
       "https://api.github.com/repos/john-smilga/gatsby-second-tutorial-recording/forks",
     keys_url:
@@ -3863,8 +3853,7 @@ export default [
       "https://github.com/john-smilga/gatsby-strapi-portfolio-site-2020",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/gatsby-strapi-portfolio-site-2020",
+    url: "https://api.github.com/repos/john-smilga/gatsby-strapi-portfolio-site-2020",
     forks_url:
       "https://api.github.com/repos/john-smilga/gatsby-strapi-portfolio-site-2020/forks",
     keys_url:
@@ -4682,8 +4671,7 @@ export default [
       "https://github.com/john-smilga/html-css-fast-and-faster-car-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-fast-and-faster-car-project",
+    url: "https://api.github.com/repos/john-smilga/html-css-fast-and-faster-car-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-fast-and-faster-car-project/forks",
     keys_url:
@@ -4822,8 +4810,7 @@ export default [
       "https://github.com/john-smilga/html-css-flexbox-backroads-new-design-2020",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-flexbox-backroads-new-design-2020",
+    url: "https://api.github.com/repos/john-smilga/html-css-flexbox-backroads-new-design-2020",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-flexbox-backroads-new-design-2020/forks",
     keys_url:
@@ -4961,8 +4948,7 @@ export default [
     html_url: "https://github.com/john-smilga/html-css-grid-project-recording",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-grid-project-recording",
+    url: "https://api.github.com/repos/john-smilga/html-css-grid-project-recording",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-grid-project-recording/forks",
     keys_url:
@@ -5098,8 +5084,7 @@ export default [
       "https://github.com/john-smilga/html-css-only-floats-tea-station-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-only-floats-tea-station-project",
+    url: "https://api.github.com/repos/john-smilga/html-css-only-floats-tea-station-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-only-floats-tea-station-project/forks",
     keys_url:
@@ -5238,8 +5223,7 @@ export default [
       "https://github.com/john-smilga/html-css-portfolio-project-with-css-grid",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-portfolio-project-with-css-grid",
+    url: "https://api.github.com/repos/john-smilga/html-css-portfolio-project-with-css-grid",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-portfolio-project-with-css-grid/forks",
     keys_url:
@@ -5377,8 +5361,7 @@ export default [
     html_url: "https://github.com/john-smilga/html-css-tea-station-new-design",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-tea-station-new-design",
+    url: "https://api.github.com/repos/john-smilga/html-css-tea-station-new-design",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-tea-station-new-design/forks",
     keys_url:
@@ -5513,8 +5496,7 @@ export default [
     html_url: "https://github.com/john-smilga/html-css-tutorial-source-code",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/html-css-tutorial-source-code",
+    url: "https://api.github.com/repos/john-smilga/html-css-tutorial-source-code",
     forks_url:
       "https://api.github.com/repos/john-smilga/html-css-tutorial-source-code/forks",
     keys_url:
@@ -5783,8 +5765,7 @@ export default [
     html_url: "https://github.com/john-smilga/javascript-tutorial-source-code",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/javascript-tutorial-source-code",
+    url: "https://api.github.com/repos/john-smilga/javascript-tutorial-source-code",
     forks_url:
       "https://api.github.com/repos/john-smilga/javascript-tutorial-source-code/forks",
     keys_url:
@@ -6053,8 +6034,7 @@ export default [
     html_url: "https://github.com/john-smilga/js-budget-calculator-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/js-budget-calculator-project",
+    url: "https://api.github.com/repos/john-smilga/js-budget-calculator-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/js-budget-calculator-project/forks",
     keys_url:
@@ -6843,8 +6823,7 @@ export default [
     html_url: "https://github.com/john-smilga/js-comfy-house-furniture-store",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/js-comfy-house-furniture-store",
+    url: "https://api.github.com/repos/john-smilga/js-comfy-house-furniture-store",
     forks_url:
       "https://api.github.com/repos/john-smilga/js-comfy-house-furniture-store/forks",
     keys_url:
@@ -10586,8 +10565,7 @@ export default [
     html_url: "https://github.com/john-smilga/question-udemy-gatsby-course",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/question-udemy-gatsby-course",
+    url: "https://api.github.com/repos/john-smilga/question-udemy-gatsby-course",
     forks_url:
       "https://api.github.com/repos/john-smilga/question-udemy-gatsby-course/forks",
     keys_url:
@@ -11399,8 +11377,7 @@ export default [
       "https://github.com/john-smilga/react-fourth-project-hotel-room-search",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-fourth-project-hotel-room-search",
+    url: "https://api.github.com/repos/john-smilga/react-fourth-project-hotel-room-search",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-fourth-project-hotel-room-search/forks",
     keys_url:
@@ -11539,8 +11516,7 @@ export default [
       "https://github.com/john-smilga/react-hooks-budged-calculator-app",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-hooks-budged-calculator-app",
+    url: "https://api.github.com/repos/john-smilga/react-hooks-budged-calculator-app",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-hooks-budged-calculator-app/forks",
     keys_url:
@@ -11944,8 +11920,7 @@ export default [
     html_url: "https://github.com/john-smilga/react-phone-e-commerce-project",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-phone-e-commerce-project",
+    url: "https://api.github.com/repos/john-smilga/react-phone-e-commerce-project",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-phone-e-commerce-project/forks",
     keys_url:
@@ -12478,8 +12453,7 @@ export default [
     html_url: "https://github.com/john-smilga/react-revised-recipe-application",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-revised-recipe-application",
+    url: "https://api.github.com/repos/john-smilga/react-revised-recipe-application",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-revised-recipe-application/forks",
     keys_url:
@@ -12748,8 +12722,7 @@ export default [
     html_url: "https://github.com/john-smilga/react-third-project-todo-list",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-third-project-todo-list",
+    url: "https://api.github.com/repos/john-smilga/react-third-project-todo-list",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-third-project-todo-list/forks",
     keys_url:
@@ -13149,8 +13122,7 @@ export default [
       "https://github.com/john-smilga/react-udemy-vintage-tech-extra-fetures",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/react-udemy-vintage-tech-extra-fetures",
+    url: "https://api.github.com/repos/john-smilga/react-udemy-vintage-tech-extra-fetures",
     forks_url:
       "https://api.github.com/repos/john-smilga/react-udemy-vintage-tech-extra-fetures/forks",
     keys_url:
@@ -13422,8 +13394,7 @@ export default [
     html_url: "https://github.com/john-smilga/redux-tutorial-simple-counter",
     description: null,
     fork: false,
-    url:
-      "https://api.github.com/repos/john-smilga/redux-tutorial-simple-counter",
+    url: "https://api.github.com/repos/john-smilga/redux-tutorial-simple-counter",
     forks_url:
       "https://api.github.com/repos/john-smilga/redux-tutorial-simple-counter/forks",
     keys_url:
@@ -13526,3 +13497,5 @@ export default [
     default_branch: "master",
   },
 ];
+
+export default userRepos;
