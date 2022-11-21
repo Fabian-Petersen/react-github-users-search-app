@@ -11,8 +11,31 @@ const rootUrl = "https://api.github.com";
 const GithubContext = createContext();
 
 const GithubProvider = ({ children }) => {
+  //request loading
+  const [request, setRequest] = useState(0);
+  const [loading, setIsLoading] = useState(false);
+
+  // Check Rate
+  const checkRequests = () => {
+    axios(`${rootUrl}/rate_limit`)
+      .then(({ data }) => {
+        let {
+          rate: { remaining },
+        } = data;
+        console.log(remaining);
+        setRequest(remaining);
+        if (remaining === 0) {
+          //throw an error if you dont have any requests.
+        }
+      })
+      .catch((error) => console.log(error));
+  };
+
+  // Error
+  useEffect(checkRequests, []);
+
   return (
-    <GithubContext.Provider value={{ user, userRepos, userFollowers }}>
+    <GithubContext.Provider value={{ user, userRepos, userFollowers, request }}>
       {children}
     </GithubContext.Provider>
   );
