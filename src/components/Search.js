@@ -5,19 +5,22 @@ import { GithubContext } from "../context/context";
 
 const Search = () => {
   const [user, setUser] = useState("");
-  const { request } = useContext(GithubContext);
+  const { request, error } = useContext(GithubContext);
   //Get data from global context
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user) {
     }
-
-    // console.log(user);
   };
 
   return (
     <section className="section">
       <Wrapper className="section-center">
+        {error.show && (
+          <ErrorWrapper>
+            <p>{error.msg}</p>
+          </ErrorWrapper>
+        )}
         <form onSubmit={handleSubmit}>
           <div className="form-control">
             <MdSearch />
