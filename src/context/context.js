@@ -32,6 +32,20 @@ const GithubProvider = ({ children }) => {
 
     if (response) {
       setGitUser(response.data);
+      const { login, followers_url } = response.data;
+      //repos
+      axios(`${rootUrl}/users/${login}/repos?per_page=100`).then((response) =>
+        setRepos(response.data)
+      );
+
+      //followers
+      axios(`${followers_url}?per_page=100`).then(
+        (response) => setFollowers(response.data)
+        // console.log(response)
+      );
+      // https://api.github.com/users/john-smilga/repos?per_page=100
+      // https://api.github.com/users/john-smilga/followers
+      // https://api.github.com/rate_limit
     } else {
       //Toggle Error when data return null
       toggleError(true, "there is no such user, try again!!");
@@ -48,7 +62,7 @@ const GithubProvider = ({ children }) => {
           rate: { remaining },
         } = data;
 
-        console.log(remaining);
+        // console.log(remaining);
         setRequest(remaining);
         if (remaining === 0) {
           //throw an error if you dont have any requests.
