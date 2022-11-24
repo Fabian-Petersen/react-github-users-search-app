@@ -1,4 +1,4 @@
-const userRepos = [
+const mockRepos = [
   {
     id: 239164394,
     node_id: "MDEwOlJlcG9zaXRvcnkyMzkxNjQzOTQ=",
@@ -13498,4 +13498,4 @@ const userRepos = [
   },
 ];
 
-export default userRepos;
+export default mockRepos;

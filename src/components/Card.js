@@ -5,7 +5,8 @@ import { MdBusiness, MdLocationOn, MdLink } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Card = () => {
-  const { user } = useContext(GithubContext);
+  const { gitUser } = useContext(GithubContext);
+
   const {
     avatar_url,
     html_url,
@@ -15,7 +16,7 @@ const Card = () => {
     bio,
     location,
     twitter_username,
-  } = user;
+  } = gitUser;
 
   return (
     <Wrapper>

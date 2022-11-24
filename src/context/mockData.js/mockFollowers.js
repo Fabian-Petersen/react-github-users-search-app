@@ -1,4 +1,4 @@
-const userFollowers = [
+const mockFollowers = [
   {
     login: "ThaELL1",
     id: 37319124,
@@ -675,4 +675,4 @@ const userFollowers = [
   },
 ];
 
-export default userFollowers;
+export default mockFollowers;

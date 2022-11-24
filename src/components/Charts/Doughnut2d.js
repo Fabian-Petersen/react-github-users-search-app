@@ -32,7 +32,7 @@ const Doughnut2d = ({ data }) => {
         pieRadius: "50%",
         doughnutRadius: "50%",
         showPercentValues: 0,
-        theme: "candy",
+        theme: "fusion",
       },
       /*
       ========================== 

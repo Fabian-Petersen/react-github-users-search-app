@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from "react";
-import user from "./mockData.js/mockUser";
-import userRepos from "./mockData.js/mockRepos";
-import userFollowers from "./mockData.js/mockFollowers";
+import mockUser from "./mockData.js/mockUser";
+import mockRepos from "./mockData.js/mockRepos";
+import mockFollowers from "./mockData.js/mockFollowers";
 import axios from "axios";
 
 const rootUrl = "https://api.github.com";
@@ -11,12 +11,35 @@ const rootUrl = "https://api.github.com";
 const GithubContext = createContext();
 
 const GithubProvider = ({ children }) => {
+  const [gitUser, setGitUser] = useState(mockUser);
+  const [followers, setFollowers] = useState(mockFollowers);
+  const [repos, setRepos] = useState(mockRepos);
   //request loading
   const [request, setRequest] = useState(0);
-  const [loading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   //error
   const [error, setError] = useState({ show: false, msg: "" });
+
+  const searchUser = async (user) => {
+    toggleError();
+    setIsLoading(true);
+    const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
+      console.log(err)
+    );
+
+    // console.log(response);
+
+    if (response) {
+      setGitUser(response.data);
+    } else {
+      //Toggle Error when data return null
+      toggleError(true, "there is no such user, try again!!");
+    }
+
+    checkRequests();
+    setIsLoading(false);
+  };
 
   const checkRequests = () => {
     axios(`${rootUrl}/rate_limit`)
@@ -43,10 +66,18 @@ const GithubProvider = ({ children }) => {
     setError({ show, msg });
   }
   useEffect(checkRequests, []);
-
+  console.log(followers);
   return (
     <GithubContext.Provider
-      value={{ user, userRepos, userFollowers, request, error }}
+      value={{
+        gitUser,
+        repos,
+        followers,
+        request,
+        error,
+        searchUser,
+        isLoading,
+      }}
     >
       {children}
     </GithubContext.Provider>

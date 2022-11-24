@@ -5,11 +5,13 @@ import { GithubContext } from "../context/context";
 
 const Search = () => {
   const [user, setUser] = useState("");
-  const { request, error } = useContext(GithubContext);
+  const { request, error, searchUser, isLoading } = useContext(GithubContext);
   //Get data from global context
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user) {
+      searchUser(user);
+      setUser("");
     }
   };
 
@@ -31,7 +33,7 @@ const Search = () => {
               onChange={(e) => setUser(e.target.value)}
             />
             {/* Only display the button when they requests are greater than zero */}
-            {request > 0 && <button type="submit">Search</button>}
+            {request > 0 && !isLoading && <button type="submit">Search</button>}
           </div>
         </form>
         <h3>requests: {request} / 60 </h3>

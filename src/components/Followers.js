@@ -5,12 +5,12 @@ import styled from "styled-components";
 const Followers = () => {
   // The name in the object must be similar to the name entered into the context function.
   // userFollowers comes from the global context
-  const { userFollowers } = useContext(GithubContext);
+  const { followers } = useContext(GithubContext);
 
   return (
     <Wrapper>
       <div className="followers">
-        {userFollowers.map((follower, index) => {
+        {followers.map((follower, index) => {
           const { avatar_url: img, html_url, login } = follower;
           return (
             <article key={index}>

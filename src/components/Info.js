@@ -6,8 +6,8 @@ import { FiUsers, FiUserPlus } from "react-icons/fi";
 
 const UserInfo = () => {
   //Assign the context value to the githubUser variable
-  const { user } = useContext(GithubContext);
-  const { public_repos, followers, following, public_gists } = user;
+  const { gitUser } = useContext(GithubContext);
+  const { public_repos, followers, following, public_gists } = gitUser;
   const items = [
     {
       id: 1,

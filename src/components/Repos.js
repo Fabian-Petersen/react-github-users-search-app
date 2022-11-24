@@ -4,9 +4,9 @@ import { GithubContext } from "../context/context";
 import { Pie3D, Column3D, Bar3D, Doughnut2D } from "./Charts";
 
 const Repos = () => {
-  const { userRepos } = useContext(GithubContext);
+  const { repos } = useContext(GithubContext);
   //! Use the reduce function to calculate how many languages are in the user repository. The initial value is an empty object {}.
-  const languages = userRepos.reduce((total, item) => {
+  const languages = repos.reduce((total, item) => {
     //! Assign the language property of the object to the item variable of the reduce function
     //? Stargazers are the values added to the object for the doughnut chart.
     const { language, stargazers_count } = item;
@@ -53,7 +53,7 @@ const Repos = () => {
 
   //stars, forks (bar charts)
 
-  let { stars, forks } = userRepos.reduce(
+  let { stars, forks } = repos.reduce(
     (total, item) => {
       const { stargazers_count, name, forks } = item;
       total.stars[stargazers_count] = { label: name, value: stargazers_count };
