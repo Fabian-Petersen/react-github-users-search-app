@@ -33,16 +33,26 @@ const GithubProvider = ({ children }) => {
     if (response) {
       setGitUser(response.data);
       const { login, followers_url } = response.data;
-      //repos
-      axios(`${rootUrl}/users/${login}/repos?per_page=100`).then((response) =>
-        setRepos(response.data)
-      );
 
-      //followers
-      axios(`${followers_url}?per_page=100`).then(
-        (response) => setFollowers(response.data)
-        // console.log(response)
-      );
+      //Promise all settled wait for all data requests to be completed before the data are displayed on the screen
+
+      await Promise.allSettled([
+        axios(`${rootUrl}/users/${login}/repos?per_page=100`),
+        axios(`${followers_url}?per_page=100`),
+      ])
+        .then((results) => {
+          // console.log(results);
+          const [repos, followers] = results;
+          const status = "fullfilled";
+          if (repos.status === status) {
+            setRepos(repos.value.data);
+          }
+
+          if (followers.status === status) {
+            setFollowers(followers.value.data);
+          }
+        })
+        .catch((error) => console.log(error));
       // https://api.github.com/users/john-smilga/repos?per_page=100
       // https://api.github.com/users/john-smilga/followers
       // https://api.github.com/rate_limit
@@ -80,7 +90,7 @@ const GithubProvider = ({ children }) => {
     setError({ show, msg });
   }
   useEffect(checkRequests, []);
-  console.log(followers);
+  // console.log(followers);
   return (
     <GithubContext.Provider
       value={{

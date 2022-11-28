@@ -8,9 +8,16 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Dashboard></Dashboard>} />
-        {/* <Route path="/login" element={<Login />} /> */}
-        {/* <Route path="*" element={<Error />} /> */}
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
