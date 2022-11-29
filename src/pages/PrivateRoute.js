@@ -1,16 +1,13 @@
 import React from "react";
-import { Route, Navigate } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
-const PrivateRoute = ({ children, ...rest }) => {
-  const isUser = true;
-  return (
-    <Route
-      {...rest}
-      render={() => {
-        return isUser ? children : <Navigate to="/login" />;
-      }}
-    ></Route>
-  );
+
+//The outlet property replaces the children from Route v5. It is all the pages that is wrapped by the PrivateRoute in the App component, in this case it is only the dashboard.
+
+const PrivateRoute = () => {
+  const isUser = false;
+  // const { isAuthenticated } = useAuth0();
+  return isUser ? <Outlet /> : <Navigate to='/login' />;
 };
 export default PrivateRoute;

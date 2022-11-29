@@ -18,15 +18,14 @@ const Navbar = () => {
       )}
       {isUser ? (
         <button
-          class="btn"
+          class='btn'
           onClick={() => {
             logout({ returnTo: window.location.origin });
-          }}
-        >
+          }}>
           Logout
         </button>
       ) : (
-        <button class="btn" onClick={loginWithRedirect}>
+        <button className='btn' onClick={loginWithRedirect}>
           Login
         </button>
       )}
