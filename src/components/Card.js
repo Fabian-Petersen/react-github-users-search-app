@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { GithubContext } from "../context/context";
 import styled from "styled-components";
 import { MdBusiness, MdLocationOn, MdLink } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const Card = () => {
   const { gitUser } = useContext(GithubContext);
