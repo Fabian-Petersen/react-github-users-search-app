@@ -15,6 +15,8 @@ ReactDOM.render(
       domain="dev-u7vvtactjmfk0dqm.us.auth0.com"
       clientId="6UdDbrJzMWpNzrG73iwyY7BAfW8e1mR1"
       redirectUri={window.location.origin}
+      //The user will be automatically logged out of the app using the social logins, therefore cachelocation is used.
+      cacheLocation="localstorage"
     >
       <GithubProvider>
         <App />
