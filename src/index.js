@@ -6,14 +6,14 @@ import * as serviceWorker from "./serviceWorker";
 import { GithubProvider } from "./context/context";
 import { Auth0Provider } from "@auth0/auth0-react";
 
-// Domain: dev-u7vvtactjmfk0dqm.us.auth0.com;
-// Client ID: 6UdDbrJzMWpNzrG73iwyY7BAfW8e1mR1;
+const domain = process.env.DOMAIN;
+const clientId = process.env.CLIENT_ID;
 
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-u7vvtactjmfk0dqm.us.auth0.com"
-      clientId="6UdDbrJzMWpNzrG73iwyY7BAfW8e1mR1"
+      domanin={domain}
+      clientId={clientId}
       redirectUri={window.location.origin}
       //The user will be automatically logged out of the app using the social logins, therefore cachelocation is used.
       cacheLocation="localstorage"
